@@ -12,23 +12,26 @@
 </head>
 <body>
     <header class="header">
-        <div class=" bar container">
+        <!--start barra-->
+        <div class="bar container">
             <div class="barLogo">
                 <p class="barName">Viaje</p>
             </div>
 
             <nav class="barNavigation">
-                <a href="#">Lugares para Hospedarte</a>
-                <a href="#">Experiencias</a>
-                <a href="#">Experiencias en Linea</a>
+                <a class="barLink" href="#">Lugares para Hospedarte</a>
+                <a class="barLink" href="#">Experiencias</a>
+                <a class="barLink" href="#">Experiencias en Linea</a>
             </nav>
 
             <nav class="barLogin">
-                <a href="#">hazte anfitrion</a>
+                <a class="barLink" href="#">hazte anfitrion</a>
             </nav>
         </div>
+        <!--end barra-->
 
-        <form class="form">
+        <!--start form-->
+        <form class="form container">
             <div class="formField">
                 <label class="formLavel" for="location">Ubicacion</label>
                 <input class="formInput" type="text" id="location" placeholder="¿A donde Viajas?">
@@ -36,14 +39,31 @@
 
             <div class="formField">
                 <label class="formLavel" for="arrival">Llegada</label>
-                <input class="formInput" type="date" id="location">
+                <input class="formInput" type="date" id="arrival">
             </div>
 
             <div class="formField">
                 <label class="formLavel" for="exit">Salida</label>
-                <input class="formInput" type="date" id="location">
+                <input class="formInput" type="date" id="exit">
+            </div>
+
+            <div class="formField">
+                <label class="formLavel" for="guests">Huespedes</label>
+                <input class="formInput" type="number" id="guests" placeholder="¿Cuantos?">
+            </div>
+
+            <div class="formField">
+                <input class="formSubmit" type="submit" id="guests" value="Buscar">
             </div>
         </form>
+        <!--end form-->
+
+        <!--start search-->
+        <div class="headerSearch container">
+            <p class="headerSearchText">¿No sabes a donde ir?</p>
+            <a class="headerSearchButton" href="#">Busqueda Flexible</a>
+        </div>
+        <!--end search-->
     </header>
 </body>
 </html>
