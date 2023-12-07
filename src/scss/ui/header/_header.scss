@@ -8,11 +8,11 @@
     padding: 3rem 0 20rem 0;
 
     &Search {
-        margin-top: 5rem;
+        margin-top: 10rem;
+        text-align: center;
 
         @include m.tablet { 
             margin-top: 30rem;
-            text-align: center;
         }
     }
 
